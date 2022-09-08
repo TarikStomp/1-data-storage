@@ -33,8 +33,54 @@
     &__menu-link {
         color: $vdb;
         transition: color 1s;
+
         &:hover {
             color: $mlb;
         }
+    }
+}
+
+.main {}
+
+.start {
+    padding: 21px 0 21px;
+
+    &__inner {
+        @extend %flexbox
+    }
+
+    &__inner-content {
+        padding-top: 177px;
+        max-width: 627px;
+    }
+
+    &__inner-title {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 15px;
+        color: $vdb;
+    }
+
+    &__inner-text {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+        letter-spacing: 0.53125px;
+        color: $vdb;
+        max-width: 585px;
+        margin-bottom: 25px;
+    }
+
+    &__inner-form {}
+
+    &__inner-pic {
+        width: 640px;
+        height: 474px;
+        background-image: url(../images/illustration-1.svg);
+        background-size: contain;
     }
 }
