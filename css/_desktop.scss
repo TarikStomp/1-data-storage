@@ -1,0 +1,40 @@
+%flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 179px;
+    }
+
+    &__logo {}
+
+    &__menu {
+        width: 271px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__menu-items {
+        @extend %flexbox
+    }
+
+    &__menu-item {
+        display: inline-block;
+    }
+
+    &__menu-link {
+        color: $vdb;
+        transition: color 1s;
+        &:hover {
+            color: $mlb;
+        }
+    }
+}
